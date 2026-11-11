@@ -16,13 +16,15 @@
 
 Free tool that hashes text or local files with SHA-256, SHA-1, MD5, and optional SHA-512. You get hex and Base64.
 
-Need it at scale or from an AI agent? Use the Apify version: **[hash-checksum on Apify](https://apify.com/tidybytetools/hash-checksum)**
+Need it at scale in the cloud? A pay-per-use Apify Actor is in our publish queue and is **not public yet**. This free local tool is the one you can use today. We will add the Store link here after it goes live.
 
 Plain code, not AI, so the same input always gives the same hashes. Runs on your own computer. MIT license. Works with Python 3.10 and newer, on Windows, Mac and Linux.
 
+Also searched as: ES: hash SHA-256, suma de comprobación / PT: hash SHA-256 / DE: SHA-256 Hash, Prüfsumme / FR: hash SHA-256, somme de contrôle / JA: SHA-256、チェックサム
+
 ## Links
 
-- **[Apify (no-install cloud version)](https://apify.com/tidybytetools/hash-checksum)** — pay only for what you use, about $0.001 per unique input. All selected hashes are included. Repeats in the same run are free. (This listing goes public this week.)
+- A pay-per-use Apify cloud version is in our publish queue and is **not public yet**. This free local tool is the one you can use today.
 
 <!-- mcp-name: io.github.tidybytetools/hash-lite -->
 
@@ -88,7 +90,7 @@ When you run it in a terminal it prints one short line about the Apify version t
 
 ## Lite vs Apify
 
-| | lite (free, this repo) | [hash-checksum on Apify](https://apify.com/tidybytetools/hash-checksum) |
+| | lite (free, this repo) | Apify cloud version (not public yet) |
 |---|---|---|
 | Hash text or files | yes, on your computer | yes, in the cloud |
 | SHA-256, SHA-1, MD5, SHA-512 | yes | yes |
