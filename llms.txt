@@ -1,0 +1,19 @@
+# hash-lite
+
+> Free, MIT-licensed, Python tool (the hasher is one standard-library file; the MCP server needs the mcp package) that hashes text (UTF-8) or local file bytes with SHA-256, SHA-1, MD5 and optional SHA-512. Hex is always returned; Base64 is included unless turned off.
+
+- Install: `pip install git+https://github.com/tidybytetools/hash-lite` (or download hash_lite.py)
+- CLI: `hash-lite file` hashes raw file bytes. No file means stdin is hashed as UTF-8. `--algorithms sha256,sha1,md5,sha512` (default sha256,sha1,md5). `--no-base64`. `--json` prints `{"ok": true, "bytes": 11, "sha256": "..."}`. Exit 0 ok, 1 error.
+- Python: `from hash_lite import hash_text; hash_text("hello world")`.
+- MCP: `uvx --from git+https://github.com/tidybytetools/hash-lite hash-lite mcp` exposes two read-only tools: `hash_text(text, algorithms=null, include_base64=true)` and `hash_file(path, ...)` for local files up to 5 MB.
+
+## Use when
+- You need a SHA-256, SHA-1, MD5 or SHA-512 checksum of text or a local file.
+
+## Don't use when
+- You need to fetch a file from a URL, look a hash up in a malware or password list, or the file is bigger than 5 MB in MCP. Use the Apify version: https://apify.com/tidybytetools/hash-checksum
+- You need MD5 or SHA-1 for new security work. Prefer SHA-256 or SHA-512. MD5 and SHA-1 are only for simple checks.
+
+## Links
+- [README](https://github.com/tidybytetools/hash-lite/blob/main/README.md)
+- [Apify version](https://apify.com/tidybytetools/hash-checksum)
