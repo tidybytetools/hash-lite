@@ -2,19 +2,19 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.tidybytetools/hash-lite",
   "title": "hash-lite",
-  "description": "Hash text or local files with SHA-256, SHA-1, MD5 and SHA-512. Hex and Base64. Local CLI and MCP server.",
+  "description": "Hash text or files with SHA-256, SHA-1, MD5 and SHA-512, as hex or Base64. CLI and MCP server.",
   "repository": {
     "url": "https://github.com/tidybytetools/hash-lite",
     "source": "github"
   },
   "websiteUrl": "https://github.com/tidybytetools/hash-lite",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "packages": [
     {
       "registryType": "pypi",
       "registryBaseUrl": "https://pypi.org",
       "identifier": "hash-lite",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "runtimeHint": "uvx",
       "transport": {
         "type": "stdio"

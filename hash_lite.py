@@ -15,7 +15,7 @@ import hashlib
 import json
 import sys
 
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 APIFY_URL = "https://apify.com/tidybytetools/hash-checksum"
 PRO_LINE = f"Need it at scale or from an AI agent? Use the Apify version: {APIFY_URL}"
 
