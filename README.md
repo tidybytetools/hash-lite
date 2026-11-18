@@ -49,14 +49,16 @@ Text is hashed as UTF-8 bytes. Local files are hashed as the raw file bytes.
 ## Install
 
 ```
-pip install git+https://github.com/tidybytetools/hash-lite
+pip install tidy-hash-lite
 ```
 
 Or use pipx, which keeps it in its own space:
 
 ```
-pipx install git+https://github.com/tidybytetools/hash-lite
+pipx install tidy-hash-lite
 ```
+
+The PyPI name is `tidy-hash-lite`. The command is still `hash-lite` (and `tidy-hash-lite` works too).
 
 Or just download `hash_lite.py` and run it with `python3`. That one file uses only Python's standard library. (Installing with pip also adds the `mcp` package, which the MCP server needs.)
 
@@ -107,7 +109,7 @@ There is a small free MCP server built in. It gives your AI app two tools. Both 
 Run it by hand to check it starts (it waits quietly for an app to talk to it):
 
 ```
-uvx --from git+https://github.com/tidybytetools/hash-lite hash-lite mcp
+uvx --from tidy-hash-lite hash-lite mcp
 ```
 
 Claude Desktop (`claude_desktop_config.json`) or Cursor (`~/.cursor/mcp.json`):
@@ -117,13 +119,13 @@ Claude Desktop (`claude_desktop_config.json`) or Cursor (`~/.cursor/mcp.json`):
   "mcpServers": {
     "hash-lite": {
       "command": "uvx",
-      "args": ["--from", "git+https://github.com/tidybytetools/hash-lite", "hash-lite", "mcp"]
+      "args": ["--from", "tidy-hash-lite", "hash-lite", "mcp"]
     }
   }
 }
 ```
 
-`uvx --from git+https://github.com/tidybytetools/hash-lite hash-lite-mcp` starts the same server.
+`uvx --from tidy-hash-lite hash-lite-mcp` starts the same server.
 
 Tools:
 
@@ -137,7 +139,7 @@ Tools:
 - **Use when:** you need a SHA-256, SHA-1, MD5 or SHA-512 checksum of text or a local file.
 - **Don't use when:** you need to fetch a file from a URL, look a hash up in a malware list, or the file is bigger than 5 MB in MCP. Use the Apify version for URL and large-file jobs.
 - **Input:** text on stdin (UTF-8) or a file path (raw bytes). Optional `--algorithms sha256,sha1,md5,sha512` and `--no-base64`.
-- **MCP:** `uvx --from git+https://github.com/tidybytetools/hash-lite hash-lite mcp` gives two read-only tools, `hash_text` and `hash_file`.
+- **MCP:** `uvx --from tidy-hash-lite hash-lite mcp` gives two read-only tools, `hash_text` and `hash_file`.
 - **Output:** with `--json`, one object: `{"ok": true, "bytes": 11, "sha256": "...", ...}`. On error `ok` is false. Exit code 0 ok, 1 error.
 - Hint lines go to stderr only, and only in a terminal, so stdout is always clean JSON. See also [`llms.txt`](https://github.com/tidybytetools/hash-lite/blob/main/llms.txt).
 

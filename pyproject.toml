@@ -3,7 +3,7 @@ requires = ["setuptools>=77"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "hash-lite"
+name = "tidy-hash-lite"
 version = "1.0.1"
 description = "Hash text or local files with SHA-256, SHA-1, MD5 and SHA-512. Hex and Base64. Local CLI and MCP server."
 readme = "README.md"
@@ -41,6 +41,7 @@ Apify = "https://apify.com/tidybytetools/hash-checksum"
 
 [project.scripts]
 hash-lite = "hash_lite:main"
+tidy-hash-lite = "hash_lite:main"
 hash-lite-mcp = "hash_lite_mcp:main"
 
 [tool.setuptools]

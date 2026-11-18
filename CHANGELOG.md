@@ -2,6 +2,11 @@
 
 What changed in hash-lite, newest first.
 
+## 1.0.1 - unreleased
+
+- The package is now named `tidy-hash-lite` on PyPI, because PyPI did not allow `hash-lite`. The Python module and the `hash-lite` command keep their names. A `tidy-hash-lite` command was added so `uvx tidy-hash-lite` works.
+- Shorter MCP Registry description.
+
 ## 1.0.0 - 2026-11-10
 
 - First release.

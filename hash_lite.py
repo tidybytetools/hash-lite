@@ -89,7 +89,7 @@ def run_mcp():
     try:
         import hash_lite_mcp
     except ImportError as e:
-        print(f"error: the MCP server needs the mcp package ({e}). Run: pip install git+https://github.com/tidybytetools/hash-lite", file=sys.stderr)
+        print(f"error: the MCP server needs the mcp package ({e}). Run: pip install tidy-hash-lite", file=sys.stderr)
         return 1
     hash_lite_mcp.main()
     return 0

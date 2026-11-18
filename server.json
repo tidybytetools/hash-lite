@@ -13,7 +13,7 @@
     {
       "registryType": "pypi",
       "registryBaseUrl": "https://pypi.org",
-      "identifier": "hash-lite",
+      "identifier": "tidy-hash-lite",
       "version": "1.0.1",
       "runtimeHint": "uvx",
       "transport": {

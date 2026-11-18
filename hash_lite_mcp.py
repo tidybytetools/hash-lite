@@ -1,7 +1,7 @@
 """Free MCP server for hash-lite (stdio).
 
-Run:  uvx --from git+https://github.com/tidybytetools/hash-lite hash-lite mcp
-  or: uvx --from git+https://github.com/tidybytetools/hash-lite hash-lite-mcp
+Run:  uvx --from tidy-hash-lite hash-lite mcp
+  or: uvx --from tidy-hash-lite hash-lite-mcp
 """
 import os
 from typing import Annotated, Literal
